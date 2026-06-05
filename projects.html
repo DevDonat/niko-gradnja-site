@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projekti | NIKO GRADNJA</title>
+  <meta name="description" content="Pogledajte izvedene projekte NIKO GRADNJA tima iz područja knauf radova, keramike i rohbau građevinskih radova.">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+  <div class="logo">
+    <img src="logo-niko-gradnja.png" alt="NIKO GRADNJA Logo">
+  </div>
+
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Početna</a></li>
+      <li><a href="services.html">Usluge</a></li>
+      <li><a href="projects.html">Projekti</a></li>
+      <li><a href="about.html">O nama</a></li>
+      <li><a href="index.html#contact">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <a href="index.html#contact" class="nav-btn">Pozovi</a>
+
+  <button class="menu-toggle" type="button" aria-label="Otvori meni" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+</header>
+
+<section class="hero hero-subpage">
+
+  <img src="projekti.JPG" class="hero-video projects-hero-image" alt="Projekti NIKO GRADNJA">
+
+  <div class="hero-content">
+    <h1>Naši projekti</h1>
+    <p>Pogledajte dio izvedenih radova iz područja knaufa, keramike i rohbau radova</p>
+  </div>
+
+</section>
+
+<section class="projects-gallery">
+
+  <div class="project-category">
+    <h2>Knauf radovi</h2>
+
+    <div class="project-row">
+      <img src="rad1.JPG" alt="Knauf radovi u prostoru" onclick="openModal('knauf', 0)">
+      <img src="rad2.JPG" alt="Izvedeni knauf radovi" onclick="openModal('knauf', 1)">
+      <img src="knauf5.JPG" alt="Knauf zidovi i obloge" onclick="openModal('knauf', 2)">
+      <img src="spusteni plafon.JPG" alt="Knauf radovi u interijeru" onclick="openModal('knauf', 3)">
+      <img src="knauf7.JPG" alt="Završni knauf radovi" onclick="openModal('knauf', 4)">
+    </div>
+  </div>
+
+  <div class="project-category">
+    <h2>Keramika</h2>
+
+    <div class="project-row">
+      <img src="keramika-1.jpg" alt="Postavljena podna keramika u hodniku" onclick="openModal('keramika', 0)">
+      <img src="keramika-2.jpg" alt="Keramika na stubištu" onclick="openModal('keramika', 1)">
+      <img src="keramika-3.jpg" alt="Završeni keramički radovi na stubištu" onclick="openModal('keramika', 2)">
+      <img src="Keramika5.JPG" alt="Završni keramički radovi" onclick="openModal('keramika', 3)">
+      <img src="keramika 6.JPG" alt="Završni keramički radovi" onclick="openModal('keramika', 4)">
+      <img src="keramika7.JPG" alt="Završni keramički radovi" onclick="openModal('keramika', 5)">
+    </div>
+  </div>
+
+  <div class="project-category">
+    <h2>Završni radovi</h2>
+
+    <div class="project-row">
+      <img src="zavrsni-radovi-1.jpg" alt="Završni radovi u hodniku" onclick="openModal('zavrsniRadovi', 0)">
+      <img src="zavrsni-radovi-2.jpg" alt="Završeni interijerski radovi u kuhinji i blagovaonici" onclick="openModal('zavrsniRadovi', 1)">
+      <img src="zavrsni-radovi-3.jpg" alt="Završni radovi u dnevnom boravku" onclick="openModal('zavrsniRadovi', 2)">
+      <img src="zavrsni-radovi-4.jpg" alt="Završeni dnevni prostor" onclick="openModal('zavrsniRadovi', 3)">
+    </div>
+  </div>
+
+  <div class="project-category">
+    <h2>Rohbau</h2>
+
+    <div class="project-row">
+      <img src="rohbau1.JPG" alt="Rohbau radovi u objektu" onclick="openModal('rohbau', 0)">
+      <img src="rohbau2.JPG" alt="Priprema prostora za radove" onclick="openModal('rohbau', 1)">
+      <img src="zastomi.JPG" alt="Građevinski radovi na terenu" onclick="openModal('rohbau', 2)">
+    </div>
+  </div>
+
+</section>
+
+<div id="imageModal" class="modal">
+
+  <span class="close" onclick="closeModal()">&times;</span>
+
+  <span class="prev" onclick="changeSlide(-1)">&#10094;</span>
+
+  <img class="modal-content" id="modalImg" alt="Uvećana slika projekta">
+
+  <span class="next" onclick="changeSlide(1)">&#10095;</span>
+
+</div>
+
+<footer class="footer">
+
+  <div class="footer-content">
+
+    <div>
+      <div class="footer-logo">
+        <img src="logo-niko-gradnja.png" alt="NIKO GRADNJA Logo">
+      </div>
+
+      <p>Završni građevinski radovi po mjeri, uz garanciju od 5 godina.</p>
+    </div>
+
+    <div>
+      <h4>Brzi linkovi</h4>
+      <a href="index.html">Početna</a><br>
+      <a href="services.html">Usluge</a><br>
+      <a href="projects.html">Projekti</a><br>
+      <a href="about.html">O nama</a><br>
+      <a href="index.html#contact">Kontakt</a>
+    </div>
+
+    <div>
+      <h4>Kontakt</h4>
+      <p>Ulica hrvatskih velikana 23<br>Trojeglava, Hrvatska</p>
+      <p><a href="tel:+385989149963">+385 98 914 9963</a></p>
+    </div>
+
+  </div>
+
+  <p class="footer-bottom">
+    © 2026 NIKO GRADNJA. Sva prava zadržana.
+  </p>
+
+</footer>
+
+<script>
+const projectImages = {
+  knauf: [
+    "rad1.JPG",
+    "rad2.JPG",
+    "knauf5.JPG",
+    "spusteni plafon.JPG",
+    "knauf7.JPG"
+  ],
+
+  keramika: [
+    "keramika-1.jpg",
+    "keramika-2.jpg",
+    "keramika-3.jpg",
+    "Keramika5.JPG",
+    "keramika 6.JPG",
+    "keramika7.JPG"
+  ],
+
+  zavrsniRadovi: [
+    "zavrsni-radovi-1.jpg",
+    "zavrsni-radovi-2.jpg",
+    "zavrsni-radovi-3.jpg",
+    "zavrsni-radovi-4.jpg"
+  ],
+
+  rohbau: [
+    "rohbau1.JPG",
+    "rohbau2.JPG",
+    "zastomi.JPG"
+  ]
+};
+
+let currentCategory = "";
+let currentIndex = 0;
+
+function openModal(category, index) {
+  currentCategory = category;
+  currentIndex = index;
+
+  document.getElementById("imageModal").style.display = "flex";
+  document.getElementById("modalImg").src = projectImages[currentCategory][currentIndex];
+}
+
+function closeModal() {
+  document.getElementById("imageModal").style.display = "none";
+}
+
+function changeSlide(direction) {
+  currentIndex += direction;
+
+  if (currentIndex < 0) {
+    currentIndex = projectImages[currentCategory].length - 1;
+  }
+
+  if (currentIndex >= projectImages[currentCategory].length) {
+    currentIndex = 0;
+  }
+
+  document.getElementById("modalImg").src = projectImages[currentCategory][currentIndex];
+}
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
