@@ -39,4 +39,4 @@ The website was created as a freelance-style business project and portfolio piec
 NIKO GRADNJA  
 Trojeglava, Hrvatska  
 Email: nikogradnja@gmail.com  
-Phone: +385 98 914 9963
+Phone: +385 98 914 9983
