@@ -1,6 +1,6 @@
-# NIKO GRADNJA Website
+# Petrušic Gradnja Website
 
-Responsive business website for NIKO GRADNJA, a construction company focused on knauf works, ceramics, rohbau works, and final interior works.
+Responsive business website for Petrušic Gradnja, a construction company focused on knauf works, ceramics, rohbau works, and final interior works.
 
 ## Overview
 
@@ -36,7 +36,7 @@ The website was created as a freelance-style business project and portfolio piec
 
 ## Contact
 
-NIKO GRADNJA  
+Petrušic Gradnja  
 Trojeglava, Hrvatska  
 Email: nikogradnja@gmail.com  
 Phone: +385 98 914 9983
