@@ -46,3 +46,33 @@ if (heroVideo) {
     }
   });
 }
+
+const revealElements = document.querySelectorAll(
+  ".service-card, .why-card, .stat, .gallery-grid img, .services-page .service-row, .project-category, .team-card, .contact, .footer"
+);
+
+revealElements.forEach((element, index) => {
+  element.classList.add("reveal-target");
+  element.style.setProperty("--reveal-delay", `${Math.min(index % 4, 3) * 0.08}s`);
+});
+
+if ("IntersectionObserver" in window) {
+  const revealObserver = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.16,
+      rootMargin: "0px 0px -70px 0px"
+    }
+  );
+
+  revealElements.forEach((element) => revealObserver.observe(element));
+} else {
+  revealElements.forEach((element) => element.classList.add("is-visible"));
+}
