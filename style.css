@@ -180,6 +180,10 @@ a {
   padding: 0;
 }
 
+.mobile-call-link {
+  display: none;
+}
+
 .nav-links a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.88);
@@ -1025,6 +1029,20 @@ a {
     display: block;
     width: 100%;
     padding: 12px 0;
+  }
+
+  .mobile-call-link {
+    display: block;
+  }
+
+  .mobile-call-link a {
+    margin-top: 8px;
+    padding: 13px 18px;
+    border-radius: 6px;
+    background: var(--gold);
+    color: #111;
+    font-weight: 800;
+    text-align: center;
   }
 
   .nav-btn {
